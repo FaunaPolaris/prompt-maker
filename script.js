@@ -37,7 +37,9 @@ const themes = [
 	"Cladistics", "Type specimens", "Binomial nomenclature", "Endemic species", "Fossil taxonomy", "Fossil",
 	"Saurischia", "Ornithischia", "Hybrid species", "Polyploidy", "Homo Naledi", "Trace fossils", "Lagerstatten",
 	"Living fossils", "Amber inclusions", "Botany", "Paleobotany", "Paleoclimatology", "Climate zones",
-	"Geographical eras", "Biofeedback"
+	"Geographical eras", "Biofeedback", "Tarot cards", "Warriors of the apocalypse", "Decay", "toxins",
+	"Vines", "Living roofs", "Natural disasters", "Aerodynamics", "Hydrodinamics", "Book press",
+	"Cartilography"
 ];
 
 const interactionLimitations = [
@@ -68,7 +70,8 @@ const artisticDirections = [
 	"Neon noir", "Noir", "Data moshing", "Arcade", "8-bit", "16-bit", "GBA", "PS1", "PS2", "Retro 3d",
 	"EGA", "VGA", "Text based", "DOS", "CRT monitor", "Grainy/VHS", "Colorful", "Flash games", "papercraft",
 	"Vector art", "CRT monitor", "Side-scrolling", "Visual novel", "Board game", "Card game", "Horror",
-	"Medieval", "2.5D", "4D"
+	"Medieval", "2.5D", "4D", "Non-euclidian geometry", "Terrariums", "Bonsais", "Floating isles",
+	"Arquipelago", "Stained glass", "algoritimic art"
 ];
 
 function generatePrompt() {
