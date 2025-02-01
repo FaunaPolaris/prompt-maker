@@ -41,11 +41,14 @@ const themes = [
 ];
 
 const interactionLimitations = [
-    "Only keyboard", "Only mouse", "One button", "Drag and drop", "No dialogue", "No text",
-    "Touch gestures", "Limited inputs (3 max)", "No direct control",
+    "Only keyboard interactions", "Only mouse interactions", "Only one interactable button",
+	 "Drag and drop interaction", "No dialogue", "No text",
+    "Touch gestures", "Limited inputs (3 max) for interaction", "No direct control",
     "Time-based interactions", "Gravity-based interactions", "Physics-based interactions",
-    "No win/lose condition", "Sound based", "Temperature based", "time only moves when the player moves",
-	"Delayed consequences", "Time loop", "Audio-only", "Grid based", "Interface based"
+    "No win/lose condition", "Sound based interactions", "Temperature based interactions",
+	"A time only moves when the player moves system",
+	"A delayed consequences system", " A time loop system", "Audio-only", "Grid based movement", 
+	"Interface based interactions"
 ];
 
 const artisticDirections = [
@@ -64,7 +67,7 @@ const artisticDirections = [
 	"Victorian naturalism", "Aboriginal dot painting", "Russian constructivism", "Scandinavian folk art",
 	"Neon noir", "Noir", "Data moshing", "Arcade", "8-bit", "16-bit", "GBA", "PS1", "PS2", "Retro 3d",
 	"EGA", "VGA", "Text based", "DOS", "CRT monitor", "Grainy/VHS", "Colorful", "Flash games", "papercraft",
-	"Vector art", "CRT", "Side-scrolling", "Visual novel", "Board game", "Card game", "Horror",
+	"Vector art", "CRT monitor", "Side-scrolling", "Visual novel", "Board game", "Card game", "Horror",
 	"Medieval", "2.5D", "4D"
 ];
 
