@@ -20,13 +20,26 @@ const artisticDirections = [
 ];
 
 function generatePrompt() {
-    const theme = themes[Math.floor(Math.random() * themes.length)];
-    const interaction = interactionLimitations[Math.floor(Math.random() * interactionLimitations.length)];
-    const art = artisticDirections[Math.floor(Math.random() * artisticDirections.length)];
-    return `Create an interactive experience inspired by ${theme}, using ${interaction} in a ${art} world.`;
+    const themeCount = parseInt(document.getElementById("themes").value, 10);
+    const interactionCount = parseInt(document.getElementById("input-types").value, 10);
+    const artCount = parseInt(document.getElementById("constraints").value, 10);
+
+    const selectedThemes = getRandomItems(themes, themeCount);
+    const selectedInteractions = getRandomItems(interactionLimitations, interactionCount);
+    const selectedArtisticDirections = getRandomItems(artisticDirections, artCount);
+
+    const themeText = selectedThemes.map(theme => `<span class="highlight">${theme}</span>`).join(", ");
+    const interactionText = selectedInteractions.map(interaction => `<span class="highlight">${interaction}</span>`).join(", ");
+    const artText = selectedArtisticDirections.map(art => `<span class="highlight">${art}</span>`).join(", ");
+
+    return `Create an interactive experience inspired by ${themeText}, using ${interactionText} in a ${artText} world.`;
 }
 
-document.getElementById("generate").addEventListener("click", () => 
-{
-    document.getElementById("prompt").textContent = generatePrompt();
+function getRandomItems(array, count) {
+    const shuffled = array.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
+
+document.getElementById("generate").addEventListener("click", () => {
+    document.getElementById("prompt").innerHTML = generatePrompt();
 });

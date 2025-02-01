@@ -4,14 +4,33 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Prompt maker</title>
-	<link rel="stylesheetj" href="style.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="container">
-		<h1>Fauna's Prompt generator</h1>
-		<button id="generate">generate prompt</button>
-		<p id="prompt"></p>
+	<div class= "wrapper">
+		<h1 id="header">Fauna's Prompt generator</h1>
+			<div class="container">
+				<div>
+					<p id="definition">Define complexity:</p>
+					<div class="input-group">
+						<label for="themes">Themes</label>
+						<input type="number" id="themes" value="1" min="1" max="3">
+					</div>
+					<div class="input-group">
+						<label for="input-types">Input Types</label>
+						<input type="number" id="input-types" value="1" min="1" max="3">
+					</div>
+					<div class="input-group">
+						<label for="constraints">Artistic Constraints</label>
+						<input type="number" id="constraints" value="1" min="1" max="3">
+					</div>
+					<button id="generate">Generate Prompt</button>
+				</div>
+		</div>
+		<div class="prompt-container">
+			<p id="prompt"></p>
+		</div>
+		<script src="script.js"></script>
 	</div>
-	<script src="script.js"></script>
 </body>
 </html>

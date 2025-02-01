@@ -1,33 +1,113 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
+    font-family: serif;
+    background-color: #600809;
+    color: #B9C6AE;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     height: 100vh;
     margin: 0;
 }
 
 .container {
     text-align: center;
+	background-color: #08605F;
+	display: block;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 12px 12px 0 rgba(23, 126, 137, 255);
+	max-width: 600px;
+	min-width: 600px;
+	margin: 20px auto;
+}
+
+.wrapper {
+	display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.highlight {
+	color: #A2AD59;
+	font-weight: bold;
+}
+
+#definition {
+	font-size: 22px;
+}
+
+input {
+	align-items: right;
+	justify-content: right;
+	background-color: #600809;
+	margin: 0 12px 12px 12px;
+	border-color: #177E89;
+	border-width: 4px;
+	border-radius: 10px;
+	text-align: center;
+	color: #B9C6AE;
+	-moz-appearance: textfield;
+	width: 60px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+	}
+
+.input-group label {
+    flex: 1;
+    text-align: left;
+    margin-right: 12px;
+}
+
+.input-group label {
+    flex: 1;
+    text-align: left;
+    margin-right: 12px;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #D01114;
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    background-color: #fff;
-    color: #000;
+    background-color: #600809;
+    color: #B9C6AE;
     border: none;
     border-radius: 5px;
+	transition: background-color 0.3s ease
 }
 
 button:hover {
-    background-color: #ddd;
+    background-color: #D01114;
+	cursor: pointer;
+}
+
+.prompt-container {
+    text-align: center;
+	background-color: #08605F;
+	display: block;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 12px 12px 0 rgba(23, 126, 137, 255);
+	display: block;
+	overflow-y: auto;
 }
 
 #prompt {
     margin-top: 20px;
     font-size: 18px;
+}
+
+#header {
+	display: block;
+	text-align: center;
 }
