@@ -38,40 +38,33 @@ const themes = [
 	"Saurischia", "Ornithischia", "Hybrid species", "Polyploidy", "Homo Naledi", "Trace fossils", "Lagerstatten",
 	"Living fossils", "Amber inclusions", "Botany", "Paleobotany", "Paleoclimatology", "Climate zones",
 	"Geographical eras", "Biofeedback", "Tarot cards", "Warriors of the apocalypse", "Decay", "toxins",
-	"Vines", "Living roofs", "Natural disasters", "Aerodynamics", "Hydrodinamics", "Book press",
-	"Cartilography"
+	"Vines", "Medieval bestiary", "Living roofs", "Natural disasters", "Aerodynamics", "Hydrodinamics", "Book press",
+	"Cartilography", "Illuminated manuscript", "Mythological map", "Alchemical diagrans", "Victorian naturalism", 
+	, "4D", "Non-euclidian geometry"
 ];
 
 const interactionLimitations = [
     "Only keyboard interactions", "Only mouse interactions", "Only one interactable button",
 	 "Drag and drop interaction", "No dialogue", "No text",
-    "Touch gestures", "Limited inputs (3 max) for interaction", "No direct control",
+    "Limited inputs (3 max) for interaction", "No direct control",
     "Time-based interactions", "Gravity-based interactions", "Physics-based interactions",
     "No win/lose condition", "Sound based interactions", "Temperature based interactions",
 	"A time only moves when the player moves system",
-	"A delayed consequences system", " A time loop system", "Audio-only", "Grid based movement", 
+	"A delayed consequences system", " A time loop system", "Grid based movement", 
 	"Interface based interactions"
 ];
 
 const artisticDirections = [
-    "2D", "3D", "Low-poly", "Monochrome", "1-bit", "Pixel art", "Abstract shapes", "No textures",
+    "2D", "3D", "Low-poly", "Monochrome", "1-bit", "Pixel art", "Abstract shapes",
     "Shader-based animation", "Procedural generation", "Hand-drawn", "Isometric perspective",
     "Top-down perspective", "First-person perspective", "Wireframe rendering", "Minimalist UI",
-    "No animations", "Limited color palette (3 colors max)", "sketchbook style", "Watercolor painting",
-	"Oil painting", "Charcoal drawing", "Ink wash", "Collage", "Glitch", "Block colors", "Gradient maps",
-	"Duotone color scheme", "Retro-futurism", "steampunk", "Holographic", "liquid motion", "Surrealism",
-	"Cubism", "Impressionism", "Dadaism", "Abstract expressionism", "Minimalist line art", "Fractal patterns", 
-	"Optical illusion", "Psychedelic", "Baroque", "Ukiyo-e", "Islamic geometric patterns", "Aztec",
-	"Mayan", "Mosaic", "Children's book", "Comic", "Storyboard", "Paper cutout", "Clay", "Stop-motion",
-	"Fantasy", "Cartography", "Medieval bestiary", "Voxel art", "Data visualization", "ASCII",
-	"Particle system", "Procedural animation", "Sound visualization" , "Diesel punk", "Atompunk",
-	"Illuminated manuscript", "Mythological map", "Alchemical diagrans", "Baroque astronomy",
-	"Victorian naturalism", "Aboriginal dot painting", "Russian constructivism", "Scandinavian folk art",
-	"Neon noir", "Noir", "Data moshing", "Arcade", "8-bit", "16-bit", "GBA", "PS1", "PS2", "Retro 3d",
-	"EGA", "VGA", "Text based", "DOS", "CRT monitor", "Grainy/VHS", "Colorful", "Flash games", "papercraft",
-	"Vector art", "CRT monitor", "Side-scrolling", "Visual novel", "Board game", "Card game", "Horror",
-	"Medieval", "2.5D", "4D", "Non-euclidian geometry", "Terrariums", "Bonsais", "Floating isles",
-	"Arquipelago", "Stained glass", "algoritimic art"
+    "No animations", "Limited color palette (3 colors max)", "Watercolor painting",
+	"Glitch", "Block colors", "Gradient maps", "Duotone color scheme", "liquid motion",
+	"Minimalist line art", "Fractal patterns", "Optical illusion",
+	"Voxel art", "Data visualization", "ASCII",
+	"Particle system", "Procedural animation", "Sound visualization" ,
+	"Arcade", "8-bit", "16-bit", "GBA", "PS1", "PS2", "Retro 3d",
+	"Vector art", "2.5D"
 ];
 
 function generatePrompt() {
